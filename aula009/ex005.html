@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body{
+            background-color: lightblue;
+            color: black;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Testando DOM</h1>
+    <p class="paragrafo">Aqui vai o resultado</p>
+    <p class="paragrafo">Aprendendo usar <strong>Dom</strong> em JavaScript</p>
+    <div id="msg">
+        Clique aqui
+    </div>
+    <script>
+        /*mudando as configurações através do DOM */
+        var corpo = window.document.body
+        corpo.style.background = 'white'
+    
+        var title = window.document.getElementById('titulo')
+        title.style.background = 'gray'
+        title.style.color = 'white'
+        title.style.textAlign = 'center'
+        title.style.padding = '10px'
+        title.style.borderRadius = '10px'
+
+        var mensagem = window.document.getElementById('msg')
+        mensagem.style.background = 'lightgreen'
+        mensagem.style.padding = '10px'
+        mensagem.style.textAlign = 'center'
+  
+    </script>
+</body>
+</html>
