@@ -3,3 +3,4 @@ do{
     console.log(`Número ${c}`)
     c++
 } while(c <= 10)
+
